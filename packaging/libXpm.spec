@@ -1,7 +1,3 @@
-#
-# Please submit bugfixes or comments via http://bugs.tizen.org/
-#
-
 Name:           libXpm
 Version:        3.5.10
 Release:        1
@@ -35,7 +31,7 @@ X.Org X11 libXpm development package
 %setup -q
 
 %build
-%reconfigure --disable-static
+%configure --disable-static
 make %{?_smp_mflags}
 
 %install
