@@ -2,9 +2,9 @@ Name:           libXpm
 Version:        3.5.10
 Release:        1
 License:        MIT
-Summary:        X
+Summary:        XPM format pixmap library
 Url:            http://www.x.org
-Group:          System Environment/Libraries
+Group:          Graphics/X Window System
 
 Source:         %{name}-%{version}.tar.bz2
 
@@ -19,7 +19,7 @@ BuildRequires:  pkgconfig(xt)
 X.Org X11 libXpm runtime library
 
 %package devel
-Summary:        X
+Summary:        XPM format pixmap library
 Group:          Development/Libraries
 Requires:       %{name} = %{version}
 Provides:       libxpm-devel
@@ -45,7 +45,7 @@ make %{?_smp_mflags}
 
 %files
 %defattr(-,root,root,-)
-%doc COPYING
+%license COPYING
 %{_libdir}/libXpm.so.4
 %{_libdir}/libXpm.so.4.11.0
 
