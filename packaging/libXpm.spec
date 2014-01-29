@@ -1,3 +1,5 @@
+%bcond_with x
+
 Name:           libXpm
 Version:        3.5.10
 Release:        1
@@ -15,6 +17,10 @@ BuildRequires:  pkgconfig(xext)
 BuildRequires:  pkgconfig(xorg-macros)
 BuildRequires:  pkgconfig(xproto)
 BuildRequires:  pkgconfig(xt)
+
+%if !%{with x}
+ExclusiveArch:
+%endif
 
 %description
 X.Org X11 libXpm runtime library
