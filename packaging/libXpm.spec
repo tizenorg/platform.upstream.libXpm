@@ -1,7 +1,7 @@
 %bcond_with x
 
 Name:           libXpm
-Version:        3.5.10
+Version:        3.5.11
 Release:        1
 License:        MIT
 Summary:        XPM format pixmap library
@@ -39,7 +39,7 @@ X.Org X11 libXpm development package
 cp %{SOURCE1001} .
 
 %build
-%configure --disable-static
+%autogen --disable-static
 make %{?_smp_mflags}
 
 %install
